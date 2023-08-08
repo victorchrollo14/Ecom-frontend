@@ -1,12 +1,9 @@
 {
   "routes": [
-    {
-      "src": "/(.*)",
-      "headers": {
-        "Cache-Control": "public, max-age=0, must-revalidate"
-      },
-      "dest": "/$1",
-      "contentType": "text/html"
-    }
+    { "src": "/product", "dest": "/product.html" },
+    { "src": "/item", "dest": "/itemPage.html" },
+    { "src": "/", "dest": "/index.html" }
+    // Add other routes as needed
   ]
 }
+
